@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Signika:700|Share+Tech+Mono");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Signika, Arial;
+  background: #dde;
+  text-align: center;
+}
+
+button {
+  border: 0;
+  border-radius: 3px;
+  padding: 5px 15px;
+  margin: 8px 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  color: #111;
+  margin-bottom: 1vh;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+#game-field {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border: 6px solid #222;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#game-field #middle-field {
+  position: absolute;
+  top: 16.66%;
+  left: 16.66%;
+  background: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #222;
+  background: #eee;
+}
+
+#game-field #middle-field h1 {
+  font-size: 2.2em;
+  margin: 0;
+  color: #111;
+}
+
+#game-field #middle-field #count {
+  padding: 2px 15px;
+  margin: 5px 0;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-family: 'Share Tech Mono', Arial;
+  font-size: 1.5em;
+}
+
+#game-field #middle-field #restart-btn {
+  background: #99f;
+}
+
+#game-field #middle-field #restart-btn:active {
+  background: #aaf;
+}
+
+#game-field #middle-field #strict-btn-and-lamp {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#game-field #middle-field #strict-btn-and-lamp #strict-btn {
+  background: #fe5;
+}
+
+#game-field #middle-field #strict-btn-and-lamp #strict-btn:active {
+  background: #fe7;
+}
+
+#game-field #middle-field #strict-btn-and-lamp #is-strict {
+  height: 4px;
+  width: 4px;
+  background: #191;
+  margin-left: 14px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px green;
+}
+
+#game-field #middle-field #strict-btn-and-lamp #is-strict.strict-mode-active {
+  background: white;
+  box-shadow: 0 0 10px 5px #32d900;
+}
+
+.quarter {
+  width: 148.5px;
+  height: 148.5px;
+}
+
+.quarter:hover {
+  cursor: pointer;
+}
+
+.quarter#green {
+  border-top-left-radius: 250px;
+  background: #02A64B;
+  float: left;
+  border-right: 3px solid #222;
+  border-bottom: 3px solid #222;
+}
+
+.quarter#green.active {
+  background: #25c86d;
+}
+
+.quarter#red {
+  border-top-right-radius: 250px;
+  background: #9C121C;
+  float: right;
+  border-bottom: 3px solid #222;
+}
+
+.quarter#red.active {
+  background: #ce3438;
+}
+
+.quarter#blue {
+  border-bottom-right-radius: 250px;
+  background: #04488F;
+  float: right;
+  border-left: 3px solid #222;
+}
+
+.quarter#blue.active {
+  background: #266aaf;
+}
+
+.quarter#yellow {
+  border-bottom-left-radius: 250px;
+  background: #D1A30B;
+  float: left;
+}
+
+.quarter#yellow.active {
+  background: #f3c52d;
+}
+
