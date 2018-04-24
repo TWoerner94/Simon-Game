@@ -103,13 +103,13 @@ const checkPlayerClick = () => {
     setTimeout(() => {
       displayColourSequence();
     }, 800);
-  } else if (playerClicked.length === plays.length && isPlayersTurn && plays.length !== 5) {
+  } else if (playerClicked.length === plays.length && isPlayersTurn && plays.length !== 20) {
     updateInfo('Good job!');
     playerClicked = [];
     plays.push(colours[getRandInt()]);
     updateCounterDisplay();
     setTimeout(() => { displayColourSequence() }, 800);
-  } else if (playerClicked.length === plays.length && isPlayersTurn && plays.length === 5) {
+  } else if (playerClicked.length === plays.length && isPlayersTurn && plays.length === 20) {
     updateInfo('Good job, you made it!');
     resetAll();
     isGameRunning = false;
