@@ -88,6 +88,9 @@ const displayColourSequence = () => {
           updateInfo('Your turn!');
         }, 800);
       };
+    }, 800 * i + 200);
+    setTimeout(() => {
+      removeAllActive();
     }, 800 * i);
   });
 };
